@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery">
+    <img src="DALL·E 2024-10-27 17.50.21 - A series of beautiful gallery images featuring nature landscapes. Include vibrant images of mountains, lakes, and forests with scenic sunlight and clo.webp" alt="Image 1" onclick="openModal(this)">
+    <img src="DALL·E 2024-10-27 17.52.52 - A vibrant nature landscape of a calm river flowing through a lush forest, with sunlight filtering through the trees and casting dappled light on the w.webp" alt="Image 2" onclick="openModal(this)">
+    <img src="DALL·E 2024-10-27 17.53.27 - A vibrant nature landscape of a serene mountain lake surrounded by evergreen trees, reflecting the blue sky and clouds. The scene has a calm, peaceful.webp" alt="Image 3" onclick="openModal(this)">
+    
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
