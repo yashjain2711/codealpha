@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:cornsilk;">
+    <script>
+        function add(){
+
+            var a = parseInt(document.getElementById("first").value);
+            var b = parseInt(document.getElementById("second").value);
+            var c = a+b;
+            document.getElementById("result").value=c;
+        }
+        function subtract(){
+
+            var a = parseInt(document.getElementById("first").value);
+            var b = parseInt(document.getElementById("second").value);
+            var c = a-b;
+            document.getElementById("result").value=c;
+        }
+        function multiply(){
+
+            var a = parseInt(document.getElementById("first").value);
+            var b = parseInt(document.getElementById("second").value);
+            var c = a*b;
+            document.getElementById("result").value=c;
+        }
+        function divide(){
+
+            var a = parseInt(document.getElementById("first").value);
+            var b = parseInt(document.getElementById("second").value);
+            var c = a/b;
+            document.getElementById("result").value=c;
+        }
+    </script>
+</body >
+<center style="background-color:greenyellow;" text-align="center">
+        <table >
+            <tr>
+                <td style="text-align:center;">Calculator</td>
+            </tr>
+            <tr>
+                <td>first</td>
+                <td><input type="text" id="first"></td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td><input type="text" id="second"></td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td><input type="text" id="result"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="add()">add</button>
+                    <button onclick="subtract()">subtract</button>
+                    <button onclick="multiply()">multiply</button>
+                    <button onclick="divide()">divide</button>
+                </td>
+                
+            </tr>
+            </center>
+        </table>
+</html>
